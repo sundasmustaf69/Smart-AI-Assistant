@@ -155,7 +155,6 @@ def wikipedia_search(query):
 # ----------------------------
 def init_gemini_model():
     try:
-        # ✅ Changed model to Gemini 2.5 Pro
         model = genai.GenerativeModel("models/gemini-2.5-pro")
         return model
     except Exception as e:
@@ -277,3 +276,4 @@ if st.button("Ask AI Assistant"):
                 st.write(tr)
             st.markdown("#### Final Synthesized Answer:")
             st.info(final)
+
